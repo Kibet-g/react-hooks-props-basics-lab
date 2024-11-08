@@ -33,14 +33,14 @@ test("passes 'bio' to <About> as a prop", () => {
 
 test("passes 'github' to <Links> as a prop, via <About>", () => {
   render(<App />);
-  const a = screen.queryByText(user.links.github);
+  const a = screen.queryByText(user.github); // Access directly from user object
   expect(a).toBeInTheDocument();
   expect(a.tagName).toEqual("A");
 });
 
 test("passes 'linkedin' to <Links> as a prop, via <About>", () => {
   render(<App />);
-  const a = screen.queryByText(user.links.linkedin);
+  const a = screen.queryByText(user.linkedin); // Access directly from user object
   expect(a).toBeInTheDocument();
   expect(a.tagName).toEqual("A");
 });

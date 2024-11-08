@@ -1,12 +1,11 @@
+// src/data/user.js
 const user = {
   name: "Liza",
   city: "New York",
-  bio: "I made this!",
   color: "firebrick",
-  links: {
-    github: "https://github.com/liza",
-    linkedin: "https://www.linkedin.com/in/liza/",
-  },
+  bio: "A passionate web developer with experience in React.",
+  github: "https://github.com/Liza",
+  linkedin: "https://www.linkedin.com/in/liza/"
 };
 
 export default user;
